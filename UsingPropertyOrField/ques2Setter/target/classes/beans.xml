@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+
+ <bean id="manager" class="com.godigit.package1.Manager">
+    
+   <property name="name" value="Aditya Mandiyal"></property>
+   <property name="salary" value="50000"></property>
+  
+    </bean>
+    
+    
+   <bean id="bank" class="com.godigit.package1.Bank">
+        <property name="bankName" value="SBI"></property>
+        <property name="noOfClerks" value="5"></property>
+        <property name="manager1" ref="manager"></property>
+   </bean>
+   
+   
+  
+  
+    
+</beans>
