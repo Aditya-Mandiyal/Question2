@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    
+    <bean id="trainer1" class="com.godigit.ques2.Trainer">
+              <constructor-arg name="name" value="Anuj Sharma"></constructor-arg>
+              <constructor-arg name="yearOfExp" value="15"></constructor-arg>
+    </bean>
+
+     <bean id="training" class="com.godigit.ques2.Training">
+     
+     <constructor-arg name="subject" value="JAVA"></constructor-arg>
+     <constructor-arg name="duration" value="1 Month"></constructor-arg>
+     <constructor-arg name="t1" ref="trainer1"></constructor-arg>
+     </bean>    
+    
+</beans>
+
+   
